@@ -12,3 +12,8 @@
 
     chcon -t httpd_sys_script_exec_t *.cgi
     chcon -t httpd_sys_rw_content_t  output/
+
+# You can check the context by
+
+ls -laZ *cgi
+ls -laZ|grep output
